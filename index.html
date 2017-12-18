@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="angular146.js"></script>
+
+
+</head>
+<body ng-app="CV" ng-controller="CVController">
+<div id="mainDiv">
+    <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1" id="mainLeftDiv">
+        <pre><span class="sky">function</span> <span class="green">blink</span>(){</pre>
+        <pre>   <span class="green">fadeOut</span>(); </pre>
+        <pre>   <span class="green">appear</span>();  </pre>
+        <pre>   <span class="sky">function</span> <span class="green">fadeOut</span>() {</pre>
+        <pre>       <span class="pink">for</span> (<span class="orange">var</span> i = 1; i < 140; i++) {</pre>
+        <pre>           $('#mainRightDiv i:eq(' + i + ')').css({color: '#322d38'})}</pre>
+        <pre>       }</pre>
+        <pre>   <span class="sky">function</span> <span class="green">appear</span>() {</pre>
+        <pre>       for (var i = 1; i < 40; i++) {</pre>
+        <pre>           var ran = Math.floor(Math.random() * 140) + 1;</pre>
+        <pre>           $('#mainRightDiv i:eq(' + ran + ')').css({color: '#3c3743'})</pre>
+        <pre>       }</pre>
+        <pre>   }</pre>
+        <pre>}</pre>
+
+        <pre><span class="sky">function</span> <span class="green">blink</span>(){</pre>
+        <pre>   <span class="green">fadeOut</span>(); </pre>
+        <pre>   <span class="green">appear</span>();  </pre>
+        <pre>   <span class="sky">function</span> <span class="green">fadeOut</span>() {</pre>
+        <pre>       <span class="pink">for</span> (<span class="orange">var</span> i = 1; i < 140; i++) {</pre>
+        <pre>           $('#mainRightDiv i:eq(' + i + ')').css({color: '#322d38'})}</pre>
+        <pre>       }</pre>
+        <pre>   <span class="sky">function</span> <span class="green">appear</span>() {</pre>
+        <pre>       for (var i = 1; i < 40; i++) {</pre>
+        <pre>           var ran = Math.floor(Math.random() * 140) + 1;</pre>
+        <pre>           $('#mainRightDiv i:eq(' + ran + ')').css({color: '#3c3743'})</pre>
+        <pre>       }</pre>
+        <pre>   }</pre>
+        <pre>}</pre>
+
+    </div>
+    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10" id="mainCenterDiv">
+        <div class="col-lg-8" style="height: 100%;border: 1px solid red;"></div>
+        <div class="col-lg-1" style="height: 100%;border: 1px solid blue;"><img src="Untitled-3.png" height="20" width="20"/></div>
+        <div class= col-lg-3" style="border: 1px solid black;padding-left: 0px;">
+            <!--image div-->
+            <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid red;">
+                <!--photo-->
+                <div style="border: 1px solid red;height: 150px;width: 100%;margin-top: 15px"></div>
+                <!--name-->
+                <p style="text-align: center;font-size: 22px;font-family: IRANSansWeb;color: #636A8B;">سهیل حسین</p>
+                <!--description-->
+                <p style="text-align: center;font-size: 11px;font-family: IRANSansWeb;color: #8F8B8F;">برنامه نویس فرانت اند</p>
+            </div>
+            <!--personal description-->
+            <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid red;direction: rtl;padding: 20px 15%;">
+                <!--birthday-->
+                <p style="font-weight: bold;font-size: 11px">تاریخ تولد:</p>
+                <p style="font-weight: bold;font-size: 10px;color: #88888A;">1368/3/30</p>
+                <br>
+                <!--address-->
+                <p style="font-weight: bold;font-size: 11px">محل سکونت:</p>
+                <p style="font-weight: bold;font-size: 10px;color: #88888A;">تهران - پونک</p>
+                <br>
+                <!--phone number-->
+                <p style="font-weight: bold;font-size: 11px">تلفن تماس:</p>
+                <p style="font-weight: bold;font-size: 10px;color: #88888A;">09107891676</p>
+                <br>
+                <!--email-->
+                <p style="font-weight: bold;font-size: 11px">ایمیل:</p>
+                <p style="font-weight: bold;font-size: 10px;color: #88888A;">Hosseini.soheil@yahoo.com</p>
+                <br>
+                <!--email-->
+                <p style="font-weight: bold;font-size: 11px">وبسایت:</p>
+                <p style="font-weight: bold;font-size: 10px;color: #88888A;">SoheilHossein.com</p>
+            </div>
+            <!--git linkedin ... link-->
+            <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid red;height: 100px;"></div>
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1" id="mainRightDiv">
+        <right-div></right-div>
+        <right-div></right-div>
+        <right-div></right-div>
+        <right-div></right-div>
+        <right-div></right-div>
+        <right-div></right-div>
+        <right-div></right-div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+<script src="CVController.js"></script>
+<script src="directories/rightdiv.js"></script>
+<script src="indexJs.js"></script>
+
+</body>
+</html>
