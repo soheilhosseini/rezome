@@ -13,8 +13,9 @@
 
 </head>
 <body ng-app="CV" ng-controller="CVController">
+
 <div id="mainDiv">
-    <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1" id="mainLeftDiv">
+    <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1" id="mainLeftDiv" style="height:800px">
         <pre><span class="sky">function</span> <span class="green">blink</span>(){</pre>
         <pre>   <span class="green">fadeOut</span>(); </pre>
         <pre>   <span class="green">appear</span>();  </pre>
@@ -46,10 +47,39 @@
         <pre>}</pre>
 
     </div>
-    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10" id="mainCenterDiv">
-        <div class="col-lg-8" style="height: 100%;border: 1px solid red;"></div>
-        <div class="col-lg-1" style="height: 100%;border: 1px solid blue;"><img src="Untitled-3.png" height="20" width="20"/></div>
-        <div class= col-lg-3" style="border: 1px solid black;padding-left: 0px;">
+    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10" id="mainCenterDiv" style="height:800px">
+
+        <div class="col-lg-8" style="height: 100%;border: 1px solid red;margin-top: 30px;padding:0px">
+            <div>
+                <!--about me-->
+                <div class="col-lg-12" style="border: 1px solid red;height:40px;">
+                    <p style="direction: rtl; font-size: 20px;margin-top:4px;">درباره من</p>
+                </div>
+
+            </div>
+
+            <div>
+                <!--about me-->
+                <div class="col-lg-12" style="border: 1px solid red;height:40px;">
+                    <p style="direction: rtl; font-size: 20px;margin-top:4px;">سلام</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-lg-1" style="border: 1px solid blue;margin-top: 30px;position: relative;padding: 0px;">
+            <!--line-->
+            <div  style="border: 1px solid red;padding: 0px;text-align: center;height:700px;width:100%;position: relative;">
+                <div style="width:1px;height: 600px;margin: 0 auto; background-color: #4D4B4E;border: 1px solid #7F7D80;"></div>
+            </div>
+            <!--symbol-->
+            <div  style="border: 4px solid green;padding: 0px;text-align: center;height:700px;position: absolute;top:8px">
+                <img src="Untitled-3.png" style="width: 40%;cursor: pointer;"/>
+            </div>
+
+        </div>
+
+        <div class=" col-lg-3 " style="height:100%;border: 1px solid black;padding-left: 0px;margin-top: 30px;">
             <!--image div-->
             <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid red;">
                 <!--photo-->
@@ -57,7 +87,8 @@
                 <!--name-->
                 <p style="text-align: center;font-size: 22px;font-family: IRANSansWeb;color: #636A8B;">سهیل حسین</p>
                 <!--description-->
-                <p style="text-align: center;font-size: 11px;font-family: IRANSansWeb;color: #8F8B8F;">برنامه نویس فرانت اند</p>
+                <p style="text-align: center;font-size: 11px;font-family: IRANSansWeb;color: #8F8B8F;">برنامه نویس فرانت
+                    اند</p>
             </div>
             <!--personal description-->
             <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid red;direction: rtl;padding: 20px 15%;">
@@ -86,7 +117,7 @@
         </div>
 
     </div>
-    <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1" id="mainRightDiv">
+    <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1" id="mainRightDiv" style="height:800px">
         <right-div></right-div>
         <right-div></right-div>
         <right-div></right-div>
