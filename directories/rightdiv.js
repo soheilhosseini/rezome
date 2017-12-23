@@ -42,5 +42,20 @@ app.directive("rightDiv", function () {
     }
 });
 
-
-
+// window.setInterval(skillsImageFadeIN, 3100);
+//
+// window.setInterval(skillsImageFadeOut, 3000);
+//
+//
+// function skillsImageFadeIN() {
+//         var ran = Math.floor(Math.random() * 8) ;
+//         $('#skillsLogo div:eq(' + ran + ') img:eq(0)').css({opacity: '0'});
+//         $('#skillsLogo div:eq(' + ran + ') img:eq(1)').css({opacity: '1'});
+//     console.log(ran);
+// }
+// function skillsImageFadeOut() {
+//     for (var i = 0; i <8; i++) {
+//         $('#skillsLogo div:eq('+i+') img:eq(0)').css({opacity: '1'});
+//         $('#skillsLogo div:eq('+i+') img:eq(1)').css({opacity: '0'});
+//     }
+// }

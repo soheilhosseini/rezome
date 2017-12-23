@@ -21,7 +21,7 @@ body {
 
 #mainCenterDiv {
     /*height: 800px;*/
-    background-color: #ebedf0;
+    background-color: #E0DEE1;
     /*background: linear-gradient(to right, #dee0e3 0%, #c1c3c6 3%,#c1c3c6 97%, #dee0e3 100%);;*/
     /*position: fixed;*/
     /*margin-left: 25%;*/
@@ -52,7 +52,6 @@ body {
     padding: 10px;
     box-shadow: 0px 0px 0px;
     /*color: rgba(31, 30, 31, 0.76)*/
-
 }
 
 .icons:hover {
