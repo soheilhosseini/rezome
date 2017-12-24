@@ -41,35 +41,6 @@ app.directive("rightDiv", function () {
             //
             //     });
             // });
-
-            // $('.skillsHover').hover(function () {
-            //     setInterval(lightOn0,250 );
-            //     setInterval(lightOn1,500 );
-            //     setInterval(lightOn2,750 );
-            //     setInterval(lightOn3,1000 );
-            //     setInterval(lightOn4,1250 );
-            //     setInterval(lightOn5,1500 );
-            //
-            //
-            //     function lightOn0 () {
-            //         $('.skillsHover div:eq('+0+')').css('background-color','#6b74a3');
-            //     }
-            //     function lightOn1 () {
-            //         $('.skillsHover div:eq('+1+')').css('background-color','#6b74a3');
-            //     }
-            //     function lightOn2 () {
-            //         $('.skillsHover div:eq('+2+')').css('background-color','#6b74a3');
-            //     }
-            //     function lightOn3 () {
-            //         $('.skillsHover div:eq('+3+')').css('background-color','#6b74a3');
-            //     }
-            //     function lightOn4 () {
-            //         $('.skillsHover div:eq('+4+')').css('background-color','#6b74a3');
-            //     }
-            //     function lightOn5 () {
-            //         $('.skillsHover div:eq('+5+')').css('background-color','#6b74a3');
-            //     }
-            // })
         }
     }
 });

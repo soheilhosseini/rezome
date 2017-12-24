@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: IRANSansWeb;
+    color: black;
 }
 
 #mainDiv {
@@ -21,17 +22,19 @@ body {
 
 #mainCenterDiv {
     /*height: 800px;*/
-    background-color: #E0DEE1;
+    /*background-color: #f2f0f3;*/
     /*background: linear-gradient(to right, #dee0e3 0%, #c1c3c6 3%,#c1c3c6 97%, #dee0e3 100%);;*/
-    /*position: fixed;*/
-    /*margin-left: 25%;*/
-    /*z-index: 1000;*/
+    background-color: white;
+
     box-shadow: 0px 0px 10px rgba(31, 30, 31, 0.76);
     border-left: 0px solid grey;
     border-right: 0px solid grey;
     padding: 0px;
     overflow: hidden;
 }
+
+
+
 
 #mainRightDiv {
     text-align: center;
@@ -109,41 +112,6 @@ pre:hover .orange {
     color: #FD9720;
 }
 
-/*.SkillsPhoto{*/
-/*position: relative;*/
-/*height: 60px;*/
-/*width: 60px;*/
-/*display: inline-block;*/
-/*!*margin:10px;*!*/
-/*margin:5px;*/
-/*!*border: 1px solid red;*!*/
-/*}*/
-
-/*.SkillsPhoto img{*/
-/*transition: 0.7s;*/
-/*cursor: pointer;*/
-/*width: 50px;*/
-/*position: absolute;*/
-/*top:0;*/
-/*left:0;*/
-/*-webkit-filter: drop-shadow(1px 2px 3px #687199);*/
-
-/*}*/
-
-/*.SkillsPhoto img:nth-child(2){*/
-/*opacity:0;*/
-/*}*/
-
-/*.SkillsPhoto:hover img:nth-child(1){*/
-/*opacity:0;*/
-/*}*/
-
-/*.SkillsPhoto:hover img:nth-child(2){*/
-/*width: 53px;*/
-/*opacity:1;*/
-/*-webkit-filter: drop-shadow(4px 4px 4px #222);*/
-/*!*filter: drop-shadow(5px 5px 5px #222);*!*/
-/*}*/
 
 .CSSSkill:hover {
     font-weight: bolder;
@@ -157,11 +125,13 @@ pre:hover .orange {
     position: relative;
     width: 12px;
     height: 6.93px;
-    background-color: #3F486F;
+    background-color:  #7e4ab8;
     margin: 3.46px 0;
     border-left: solid 1px #333333;
     border-right: solid 1px #333333;
     display: inline-block;
+    box-shadow: 0px 6px 6px black;
+
 }
 
 .hexagon:before,
@@ -188,6 +158,7 @@ pre:hover .orange {
     bottom: -4.2426px;
     border-bottom: solid 1.4142px #333333;
     border-left: solid 1.4142px #333333;
+
 }
 
 .skillsHover{
@@ -201,25 +172,36 @@ pre:hover .orange {
     transition: 300ms;
 }
 .skillsHover div:nth-child(3){
-    transition: 600ms;
+    transition: 450ms;
 }
-.skillsHover div :nth-child(4){
-    transition: 900ms;
+.skillsHover div:nth-child(4){
+    transition: 550ms;
 }
 .skillsHover div:nth-child(5){
-    transition: 1200ms;
+    transition: 600ms;
 }
 .skillsHover div:nth-child(6){
-    transition: 1500ms;
+    transition: 630ms;
 }
 
 .skillsHover:hover .hexagon{
-background-color: #ffe113;
+background-color: #4a3763;
+box-shadow: 0px 0px 0px black;
 }
-
 .hexagonEmpty{
     background-color: transparent;
+    box-shadow: 0px 0px 0px ;
 }
 .skillsHover:hover .hexagonEmpty{
     background-color: transparent;
+    box-shadow: 0px 0px 0px ;
+
+}
+
+/*.skillsHover div:first-child{*/
+    /*transition: 1s;*/
+/*}*/
+
+.skillsHover:hover div:first-child{
+    font-weight: bolder;
 }
