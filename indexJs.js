@@ -3,62 +3,76 @@
 // $('#mainCenterDiv').css('height', height);
 // $('#mainRightDiv').css('height', height);
 
+//append icons
 
-// setTimeout(skillsPhotoBlinkFadeIn,1000);
-// setTimeout(skillsPhotoBlinkFadeOut,2500);
-//
-// function skillsPhotoBlinkFadeIn() {
-//     $('.SkillsPhoto ').css('transition','1s');
-//     $('.SkillsPhoto img:first-child').css('opacity','0');
-//     $('.SkillsPhoto img:nth-child(2)').css('opacity','1');
-// }
-//
-// function skillsPhotoBlinkFadeOut() {
-//     $('.SkillsPhoto').css('transition','1s');
-//     $('.SkillsPhoto img:first-child').css('opacity','1');
-//     $('.SkillsPhoto img:nth-child(2)').css('opacity','0');
-// }
+$('#primitiveDiv img').mouseenter(function () {
+    $('#primitiveDiv img:eq(0)').css('opacity','0');
+    $('#primitiveDiv img:eq(1)').css('opacity','1');
 
-// $('.skillsHover').hover(function () {
-//     if ($(this).find('div:eq(0)').html() == 'HTML') {
-//         $('.icon-HTML5').css('color', 'white');
-//         $('.icon-HTML5').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'CSS') {
-//         $('.icon-CSS3').css('color', 'white');
-//         $('.icon-CSS3').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'Javascript') {
-//         $('.icon-javascript').css('color', 'white');
-//         $('.icon-javascript').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'Jquery') {
-//         $('.icon-Jquery').css('color', 'white');
-//         $('.icon-Jquery').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'Bootstrap') {
-//         $('.icon-Boostrap').css('color', 'white');
-//         $('.icon-Boostrap').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'Materialize') {
-//         $('.icon-materiaze').css('color', 'white');
-//         $('.icon-materiaze').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'AngularJs') {
-//         $('.icon-ANgualrJS').css('color', 'white');
-//         $('.icon-ANgualrJS').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'Sass') {
-//         $('.icon-sass-1').css('color', 'white');
-//         $('.icon-sass-1').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)');
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'Github') {
-//         $('.icon-github').css('color', 'white');
-//         $('.icon-github').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-//     if ($(this).find('div:eq(0)').html() == 'Photoshop') {
-//         $('.icon-photoshop').css('color', 'white');
-//         $('.icon-photoshop').css('text-shadow', '2px 1px 3px rgba(31, 30, 31, 0.76)')
-//     }
-// })
+});
+
+$('#primitiveDiv img').mouseleave(function () {
+    $('#primitiveDiv img:eq(0)').css('opacity','1');
+    $('#primitiveDiv img:eq(1)').css('opacity','0');
+
+});
+
+$('#primitiveDiv img').click(function () {
+    $('#primitiveDiv').css('display','none');
+    $('#mainDiv').css('display','block');
+    $('#mainDiv').css('opacity','1');
+
+    $.get("rightdiv.html", function (data) {
+        for (var x = 0; x < 8; x++) {
+            $('.edge ').append(data);
+        }
+    }).then(function () {
+        // hover
+        $(".edge  i").hover(function () {
+            $(this).css('color', 'white');
+            $(this).css('text-shadow', '2px 1px 8px black');
+        });
+
+        // blink
+        blink();
+        window.setInterval(blink, 8000);
+        // window.setInterval(fadeOutShadow, 40000);
+    });
+});
+
+
+
+
+function blink() {
+
+    setTimeout(fadeOut, 0);
+    setTimeout(appear, 6000);
+    function fadeOut() {
+        $('.edge i').css({color: '#191d36'});
+
+        $('.edge i').css('text-shadow', 'none');
+
+    }
+
+    function appear() {
+        for (var i = 1; i < 50; i++) {
+            var ran = Math.floor(Math.random() * 304) + 1;
+            $('.edge i:eq(' + ran + ')').css({color: '#ffffff'});
+            $('.edge i:eq(' + ran + ')').css('text-shadow', '10px 5px 4px black');
+
+        }
+    }
+
+
+}
+function fadeOutShadow() {
+    for (var i = 0; i < 304; i++) {
+        // var ran = Math.floor(Math.random() * 140) + 1;
+        $('.edge  i:eq(' + i + ')').css('text-shadow', '0px 0px 0px rgba(31, 30, 31, 0.76)');
+    }
+}
+
+
+
+
 

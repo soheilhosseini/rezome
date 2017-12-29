@@ -4,21 +4,71 @@ body {
     color: black;
 }
 
+#primitiveDiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100vh;;
+    background-color: #2c3048;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 200px;
+
+}
+
+#primitiveDiv div {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+#primitiveDiv img {
+    top:0px;
+    left:0px;
+    position: absolute;
+    transition: 1s;
+    margin: 0 auto;
+    width: 200px;
+    -webkit-filter: drop-shadow(6px 6px 2px #1e1e1e);
+
+}
+
+#primitiveDiv div:hover img{
+    -webkit-filter: drop-shadow(20px 20px 2px #1e1e1e);
+    width: 210px;
+}
+
+/*#primitiveDiv div:hover {*/
+    /*-webkit-filter: drop-shadow(20px 20px 2px #1e1e1e);*/
+    /*width: 231px;*/
+/*}*/
+
+#primitiveDiv img:nth-child(2) {
+    opacity: 0;
+}
+
 #mainDiv {
+    display: none;
     padding: 0px;
     width: 100%;
     /*height: 1000px;*/
     /*display: flex;*/
     /*justify-content: center*/
+    background-color: #2c3048;
+    opacity:0;
+    transition:2s;
 }
 
-#mainLeftDiv {
+.edge {
+    transition: 2s;
     color: #3c3743;
     font-size: 23px;
     padding-top: 20px;
     overflow: hidden;
-    /*background-color: #2f2c32;*/
-    background-color: #1a1d37;
+    background-color: #2c3048;
+    /*background-color: #1a1d37;*/
 
     -webkit-user-select: none; /* Chrome all / Safari all */
     -moz-user-select: none; /* Firefox all */
@@ -41,22 +91,9 @@ body {
     z-index: 1000;
 }
 
-#mainRightDiv {
-    text-align: center;
-    overflow: hidden;
-    /*background-color: #2f2c32;*/
-    background-color: #1a1d37;
-
-    -webkit-user-select: none; /* Chrome all / Safari all */
-    -moz-user-select: none; /* Firefox all */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Likely future */
-    cursor: pointer;
-}
-
 .icons {
     /*color: #1f2241;*/
-    color: #2a3355;
+    color: #1a1f39;
     /*color: white;*/
     display: inline-block;
     font-size: 23px;
@@ -128,16 +165,17 @@ pre:hover .orange {
 }
 
 .hexagon {
-    /*transition: 1s;*/
+    transition: 1s;
+    display: inline-block;
     position: relative;
-    width: 25px;
-    height: 14.43px;
-    background-color: #64C7CC;
-    margin: 7.22px 0;
-    border-left: solid 2px #333333;
-    border-right: solid 2px #333333;
-    /*box-shadow: 0px 6px 6px black;*/
+    width: 12px;
+    height: 6.93px;
     background-color: #2e3462;
+    margin: 3.46px 0;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    margin: 0px;
+    /*-webkit-filter: drop-shadow(0px 5px 1px #c3b8f6);*/
 }
 
 .hexagon:before,
@@ -145,25 +183,25 @@ pre:hover .orange {
     content: "";
     position: absolute;
     z-index: 1;
-    width: 17.68px;
-    height: 17.68px;
+    width: 8.49px;
+    height: 8.49px;
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
     -ms-transform: scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     background-color: inherit;
-    left: 1.6612px;
+    left: 0.7574px;
 }
 
 .hexagon:before {
-    top: -8.8388px;
-    border-top: solid 2.8284px #333333;
-    border-right: solid 2.8284px #333333;
+    top: -4.2426px;
+    border-top: solid 1.4142px #333333;
+    border-right: solid 1.4142px #333333;
 }
 
 .hexagon:after {
-    bottom: -8.8388px;
-    border-bottom: solid 2.8284px #333333;
-    border-left: solid 2.8284px #333333;
+    bottom: -4.2426px;
+    border-bottom: solid 1.4142px #333333;
+    border-left: solid 1.4142px #333333;
 }
 
 .skillsHover {
@@ -195,18 +233,19 @@ pre:hover .orange {
 }
 
 .skillsHover:hover .hexagon {
-    background-color: #475198;
-    box-shadow: 0px 0px 0px black;
+    background-color: #98000a;
+    -webkit-filter: drop-shadow(0px 5px 1px #c3b8f6);
+
 }
 
 .hexagonEmpty {
     background-color: transparent;
-    box-shadow: 0px 0px 0px;
+    -webkit-filter: drop-shadow(0px 0px 0px);
 }
 
 .skillsHover:hover .hexagonEmpty {
     background-color: transparent;
-    box-shadow: 0px 0px 0px;
+    -webkit-filter: drop-shadow(0px 0px 0px);
 
 }
 
@@ -221,6 +260,7 @@ pre:hover .orange {
 .SkillsPhoto {
     /*color: #2E3462;*/
     color: #3a4675;
+
     margin: 0px;
     padding: 0px;
     display: inline-block;
@@ -270,28 +310,21 @@ pre:hover .orange {
 
 .uscelImage {
     position: absolute;
-    width: 25px;
-    left: 17px;
+    width: 21px;
+    left: 19px;
     z-index: 20
 }
 
 .line {
-    width: 2px;
+    width: 1px;
     height: 690px;
-    background-color: #646b9a;
+    background-color: #e3e3e3;
     position: absolute;
     left: 29px;
     z-index: 10;
     margin-top: 30px;
-
+    /*box-shadow: 0px 0px 3px #c3b8f6;*/
 }
 
-.uscelImage:hover {
 
-    /*-webkit-filter: drop-shadow(-2px 0px 1px #c3b8f6);*/
 
-}
-
-.line {
-    box-shadow: 0px 0px 3px #c3b8f6;
-}
