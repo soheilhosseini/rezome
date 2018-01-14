@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Soheil hossein</title>
     <link rel="stylesheet" href="icomoon/style.css">
     <script src="jquery-3.2.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Scrollbar/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="style.css">
 
 <body>
@@ -19,16 +20,34 @@
 </div>
 
 <div id="mainDiv">
-    <div class="col-lg-3 col-md-1 edge"  style="height:1000px">
+    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs edge"  style="height:100vh">
     </div>
-    <div class="col-lg-6 col-md-10 col-sm-12 col-xs-12 " id="mainCenterDiv" style="height:1000px;">
+    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 mCustomScrollbar" data-mcs-theme="minimal-dark" id="mainCenterDiv" style="height:100vh;">
+
+        <div class="hidden-lg hidden-md  row" style="height: 230px;background-color: #2E3462">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid transparent;">
+                <div class="edgeHeader"></div>
+                <div style="position: absolute;left: 0;right: 0;margin: auto;top:0;width:200px;">
+                    <!--photo-->
+                    <div class="col-sm-12" style="text-align: center;margin-top: 10px">
+                        <img src="image/face/face4.png" width="120" style="-webkit-filter: drop-shadow(0px 4px 2px #1e1e1e)"/>
+                    </div>
+
+                    <!--name-->
+                    <p class="col-sm-12" style="color:#e9e012;text-align: center;font-size: 20px;margin-top: 10px">سهیل حسین</p>
+                    <!--description-->
+                    <p style="text-align: center;font-size: 13px;font-family: IRANSansWeb;color: #fbfbff;">برنامه نویس سمت کاربر</p>
+                </div>
+            </div>
+        </div>
+
         <!--about me & etc-->
-        <div class="col-lg-8 aboutMeEtc" >
+        <div class="col-lg-8 col-md-8 col-sm-11 col-xs-10    aboutMeEtc" >
             <!--about me-->
-            <div>
+            <div class=" skillsTitle">
                 <!--about me-->
-                <div class="col-lg-12" style="border: 1px solid transparent;height:40px;">
-                    <p style="direction: rtl; font-size: 17px;margin-top:4px;font-weight: bold">درباره من</p>
+                <div class="col-lg-12" >
+                    <p class="skillsTitleFirstPtag">درباره من</p>
                 </div>
 
                 <div>
@@ -37,365 +56,263 @@
                 </div>
 
                 <!--about me description-->
-                <div class="col-lg-12" style="border: 1px solid transparent;">
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">از بزرگترین تفریحات من در زندگی، شغلم یعنی برنامه نویسی است.</p>
+                <div class="col-lg-12">
+                    <p class="skillsTitleSecondPtag">از بزرگترین تفریحات زندگی من، شغلم یعنی برنامه نویسی است.</p>
                 </div>
                 <div style="clear:both"></div>
             </div>
 
             <!--course-->
-            <div style="margin-top: 20px;">
-                <!--Education-->
-                <div class="col-lg-12" style="border: 1px solid transparent;height:40px;">
-                    <p style="direction: rtl; font-size: 17px;margin-top:4px;font-weight: bold">دوره ها</p>
+            <div class="courses skillsTitle">
+                <!--course-->
+                <div class="col-lg-12 ">
+                    <p class="skillsTitleFirstPtag">دوره ها</p>
                 </div>
 
                 <div>
                     <div class="col-lg-1"></div>
-                    <hr class="col-lg-11" style="margin-top: 0px;margin-bottom: 5px" >
+                    <hr class="col-lg-11" >
                 </div>
-                <!--Education description-->
-                <div class="col-lg-12" style="border: 1px solid transparent;">
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">دوره فرانت اند مدرسه کاروندی تعاملی برنامه نویسی مکتب شریف</p>
-
+                <!--course description-->
+                <div class="col-lg-12">
+                    <p class="skillsTitleSecondPtag">دوره فرانت اند مدرسه کاروندی تعاملی برنامه نویسی مکتب شریف</p>
                 </div>
                 <div style="clear:both"></div>
             </div>
 
             <!--Skills-->
-            <div style="margin-top: 20px">
+            <div class="skills skillsTitle" style="margin-top: 20px">
                 <!--Skills-->
-                <div class="col-lg-12" style="border: 1px solid transparent;height:40px;position: relative;">
-                    <p style="direction: rtl; font-size: 17px;margin-top:4px;font-weight: bold">مهارت ها</p>
+                <div class="col-lg-12 ">
+                    <p class="skillsTitleFirstPtag"> مهارت ها</p>
                     <div style="clear: both;"></div>
                 </div>
                 <div>
                     <div class="col-lg-1"></div>
-                    <hr class="col-lg-11" style="margin-top: 0px;margin-bottom: 5px" >
+                    <hr class="col-lg-11">
                 </div>
                 <!--skills description-->
-                <div id="skillsLogo" class="col-lg-12 " style="text-align: center;border: 1px solid transparent;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  style=";margin-top: 10px">
                     <!--first line-->
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block;">
-                        <!--HTML-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">HTML</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center;">
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
-                                <!--<i class="SkillsPhoto icon-HTML5"></i>-->
-                                <!--<i class="SkillsPhoto icon-HTML5"></i>-->
-                                <!--<i class="SkillsPhoto icon-HTML5"></i>-->
-                                <!--<i class="SkillsPhoto icon-HTML5"></i>-->
-                                <!--<i class="SkillsPhoto icon-HTML5"></i>-->
-                                <!--<i class="SkillsPhoto icon-HTML5"></i>-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 skillsRow" >
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--HTML-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">HTML</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="col-lg-2" ></div>
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
+                        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" ></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
                         <!--CSS-->
                         <div class="row skillsHover" >
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">CSS</div>
-                            <div class="col-lg-8 " style="padding: 0px;text-align: center">
-                                <!--<i class="SkillsPhoto icon-CSS3"></i>-->
-                                <!--<i class="SkillsPhoto icon-CSS3"></i>-->
-                                <!--<i class="SkillsPhoto icon-CSS3"></i>-->
-                                <!--<i class="SkillsPhoto icon-CSS3"></i>-->
-                                <!--<i class="SkillsPhoto icon-CSS3"></i>-->
-                                <!--<i class="SkillsPhoto icon-CSS3 SkillsPhotoEmpty"></i>-->
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
-
-
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">CSS</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                <i class="hexagon icon-hexagon"></i>
+                                <i class="hexagon icon-hexagon"></i>
+                                <i class="hexagon icon-hexagon"></i>
+                                <i class="hexagon icon-hexagon"></i>
+                                <i class="hexagon icon-hexagon"></i>
+                                <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
                             </div>
-                            <!--<div style="clear:both"></div>-->
                         </div>
+                    </div>
                     </div>
 
                     <!--second line-->
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--Javascript-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">Javascript</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-                                <!--<i class="SkillsPhoto icon-javascript"></i>-->
-                                <!--<i class="SkillsPhoto icon-javascript"></i>-->
-                                <!--<i class="SkillsPhoto icon-javascript"></i>-->
-                                <!--<i class="SkillsPhoto icon-javascript"></i>-->
-                                <!--<i class="SkillsPhoto icon-javascript"></i>-->
-                                <!--<i class="SkillsPhoto icon-javascript SkillsPhotoEmpty"></i>-->
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
-
+                    <div class="col-lg-12 col-md-12 col-sm-12 skillsRow" >
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--javascript-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">Javascript</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2" ></div>
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--Jquery-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">Jquery</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-                                <!--<i class="SkillsPhoto icon-Jquery"></i>-->
-                                <!--<i class="SkillsPhoto icon-Jquery"></i>-->
-                                <!--<i class="SkillsPhoto icon-Jquery"></i>-->
-                                <!--<i class="SkillsPhoto icon-Jquery"></i>-->
-                                <!--<i class="SkillsPhoto icon-Jquery SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-Jquery SkillsPhotoEmpty"></i>-->
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" ></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--jquery-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">JQuery</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--third line-->
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--Bootstrap-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">Bootstrap</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-                                <!--<i class="SkillsPhoto icon-Boostrap"></i>-->
-                                <!--<i class="SkillsPhoto icon-Boostrap"></i>-->
-                                <!--<i class="SkillsPhoto icon-Boostrap"></i>-->
-                                <!--<i class="SkillsPhoto icon-Boostrap"></i>-->
-                                <!--<i class="SkillsPhoto icon-Boostrap"></i>-->
-                                <!--<i class="SkillsPhoto icon-Boostrap SkillsPhotoEmpty"></i>-->
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 skillsRow" >
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--Bootstrap-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">Bootstrap</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2" ></div>
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--Materialize-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">Materialize</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-                                <!--<i class="SkillsPhoto icon-materiaze" style="font-size:8px;margin: 0px; "></i>-->
-                                <!--<i class="SkillsPhoto icon-materiaze" style="font-size:8px;margin: 0px "></i>-->
-                                <!--<i class="SkillsPhoto icon-materiaze" style="font-size:8px;margin: 0px "></i>-->
-                                <!--<i class="SkillsPhoto icon-materiaze" style="font-size:8px;margin: 0px "></i>-->
-                                <!--<i class="SkillsPhoto icon-materiaze" style="font-size:8px;margin: 0px "></i>-->
-                                <!--<i class="SkillsPhoto icon-materiaze SkillsPhotoEmpty" style="font-size:8px;margin: 0px "></i>-->
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" ></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--Materialize-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">Materialize</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--forth line-->
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--AngularJs-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">AngularJs</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-
-                                <!--<i class="SkillsPhoto icon-ANgualrJS"></i>-->
-                                <!--<i class="SkillsPhoto icon-ANgualrJS"></i>-->
-                                <!--<i class="SkillsPhoto icon-ANgualrJS"></i>-->
-                                <!--<i class="SkillsPhoto icon-ANgualrJS SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-ANgualrJS SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-ANgualrJS SkillsPhotoEmpty"></i>-->
-
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 skillsRow" >
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--Reactjs-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">Reactjs</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2" ></div>
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--Sass-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">Sass</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-                                <!--<i class="SkillsPhoto icon-sass-1"></i>-->
-                                <!--<i class="SkillsPhoto icon-sass-1"></i>-->
-                                <!--<i class="SkillsPhoto icon-sass-1 SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-sass-1 SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-sass-1 SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-sass-1 SkillsPhotoEmpty"></i>-->
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" ></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--Sass-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">Sass</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--fifth line-->
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--Github-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">Github</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-
-                                <!--<i class="SkillsPhoto icon-github"></i>-->
-                                <!--<i class="SkillsPhoto icon-github"></i>-->
-                                <!--<i class="SkillsPhoto icon-github"></i>-->
-                                <!--<i class="SkillsPhoto icon-github"></i>-->
-                                <!--<i class="SkillsPhoto icon-github SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-github SkillsPhotoEmpty"></i>-->
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
-
+                    <div class="col-lg-12 col-md-12 col-sm-12 skillsRow" >
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--Illustrator-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">Illustrator</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2" ></div>
-                    <div class="col-lg-5 col-md-5" style="height: 30px;display: inline-block">
-                        <!--Photoshop-->
-                        <div class="row skillsHover">
-                            <div class="col-lg-4" style="text-align: left;font-size: 12px;padding: 2px;">Photoshop</div>
-                            <div class="col-lg-8" style="padding: 0px;text-align: center">
-                                <!--<i class="SkillsPhoto icon-photoshop"></i>-->
-                                <!--<i class="SkillsPhoto icon-photoshop"></i>-->
-                                <!--<i class="SkillsPhoto icon-photoshop"></i>-->
-                                <!--<i class="SkillsPhoto icon-photoshop SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-photoshop SkillsPhotoEmpty"></i>-->
-                                <!--<i class="SkillsPhoto icon-photoshop SkillsPhotoEmpty"></i>-->
-
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon"></div>
-                                <div class="hexagon hexagonEmpty"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" ></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 skillsDiv" style="display: inline-block">
+                            <!--Photoshop-->
+                            <div class="row skillsHover" >
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: left;font-size: 12px;padding: 2px;">Photoshop</div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;text-align: center">
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-hexagon"></i>
+                                    <i class="hexagon icon-empty-hexagon hexagonEmpty"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!--angularjs-->
-                    <!--<div class="SkillsPhoto">-->
-                        <!--<img src="image/New folder/angularjs.png" />-->
-                        <!--<img src="image/angularjs.png" />-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash;bootstrap&ndash;&gt;-->
-                    <!--<div class="SkillsPhoto">-->
-                    <!--<img src="image/New folder/bootstrap.png" /><img-->
-                    <!--src="image/bootstrap.png" />-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash;css3&ndash;&gt;-->
-                    <!--<div class="SkillsPhoto">-->
-                    <!--<img src="image/New folder/CSS3.png" /> -->
-                    <!--<img src="image/CSS3.png" />-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash;html5&ndash;&gt;-->
-                    <!--<div class="SkillsPhoto">-->
-                    <!--<img src="image/New folder/HTML5.png" />-->
-                    <!--<img src="image/HTML5.png" />-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash;Javascript&ndash;&gt;-->
-                    <!--<div class="SkillsPhoto">-->
-                    <!--<img src="image/New folder/Javascript.png" />-->
-                    <!--<img src="image/Javascript.png" />-->
-                    <!--</div>-->
-
-                    <!--&lt;!&ndash;jquery&ndash;&gt;-->
-                    <!--<div class="SkillsPhoto">-->
-                    <!--<img src="image/New folder/jquery.png" />-->
-                    <!--<img src="image/jquery.png" />-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash;materialize&ndash;&gt;-->
-                    <!--<div class="SkillsPhoto">-->
-                    <!--<img src="image/New folder/materiaze.png" />-->
-                    <!--<img src="image/materiaze.png" />-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash;sass&ndash;&gt;-->
-                    <!--<div class="SkillsPhoto">-->
-                    <!--<img src="image/New folder/sass.png" />-->
-                    <!--<img src="image/sass.png" />-->
-                    <!--</div>-->
-
-                </div>
-
-
-            </div>
-            <div style="clear:both"></div>
-
-            <!--Education-->
-            <div style="margin-top: 20px;">
-                <!--Education-->
-                <div class="col-lg-12" style="border: 1px solid transparent;height:40px;">
-                    <p style="direction: rtl; font-size: 17px;margin-top:4px;font-weight: bold">تحصیلات</p>
                 </div>
 
                 <div>
                     <div class="col-lg-1"></div>
-                    <hr class="col-lg-11" style="margin-top: 0px;margin-bottom: 5px" >
+                    <hr class="col-lg-11">
+                </div>
+                <div class="col-lg-12" >
+                    <p style="direction: rtl;font-weight: bold">آشنایی با:</p>
+                    <p style="direction: rtl">PHP ، mysql server و github</p>
+                    <div style="clear:both"></div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+
+            <!--Education-->
+            <div class="education skillsTitle" >
+                <!--Education-->
+                <div class="col-lg-12 ">
+                    <p class="skillsTitleFirstPtag">تحصیلات</p>
+                </div>
+
+                <div>
+                    <div class="col-lg-1"></div>
+                    <hr class="col-lg-11" >
                 </div>
 
                 <!--Education description-->
                 <div class="col-lg-12" style="border: 1px solid transparent;">
-                    <p style="direction: rtl;font-weight: bold; font-size: 13px;margin-top:4px;text-align: justify">
+                    <p class="skillsTitleSecondPtag" style="font-weight: bold">
                         دانشگاه صنعتی امیرکبیر</p>
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">کارشناسی ارشد در رشته
+                    <p class="skillsTitleSecondPtag" >کارشناسی ارشد در رشته
                         مهندسی هوافضا</p>
 
-                    <p style="direction: rtl;font-weight: bold; font-size: 13px;margin-top:4px;text-align: justify">
+                    <p class="skillsTitleSecondPtag" style="font-weight: bold">
                         دانشگاه آزاد اسلامی واحد علوم و تحقیقات</p>
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">کارشناسی در رشته
+                    <p class="skillsTitleSecondPtag" >کارشناسی در رشته
                         مهندسی هوافضا</p>
                 </div>
                 <div style="clear:both"></div>
             </div>
 
             <!--language-->
-            <div style="margin-top: 20px;">
+            <div class="language skillsTitle" style="margin-top: 20px;">
                 <!--language-->
-                <div class="col-lg-12" style="border: 1px solid transparent;height:40px;">
-                    <p style="direction: rtl; font-size: 17px;margin-top:4px;font-weight: bold">زبان</p>
+                <div class="col-lg-12" >
+                    <p class="skillsTitleFirstPtag">زبان</p>
                 </div>
                 <div>
                     <div class="col-lg-1"></div>
-                    <hr class="col-lg-11" style="margin-top: 0px;margin-bottom: 5px" >
+                    <hr class="col-lg-11" >
                 </div>
 
                 <!--language description-->
-                <div class="col-lg-12" style="border: 1px solid transparent;">
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">
+                <div class="col-lg-12">
+                    <p class="skillsTitleSecondPtag">
                         آشنایی به زبان انگلیسی، توانایی درک مطلب و ترجمه متون
                         تخصصی</p>
                 </div>
@@ -403,22 +320,22 @@
             </div>
 
             <!--previous jobs-->
-            <div style="margin-top: 20px;">
+            <div class="previousJobs skillsTitle" style="margin-top: 20px;">
                 <!--previous jobs-->
-                <div class="col-lg-12" style="border: 1px solid transparent;height:40px;">
-                    <p style="direction: rtl; font-size: 17px;margin-top:4px;font-weight: bold">سوابق کاری غیر مرتبط</p>
+                <div class="col-lg-12" >
+                    <p class="skillsTitleFirstPtag">سوابق کاری غیر مرتبط</p>
                 </div>
                 <div>
                     <div class="col-lg-1"></div>
-                    <hr class="col-lg-11" style="margin-top: 0px;margin-bottom: 5px" >
+                    <hr class="col-lg-11">
                 </div>
 
-                <!--language description-->
-                <div class="col-lg-12" style="border: 1px solid transparent;">
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">
+                <!--previous jobs description-->
+                <div class="col-lg-12" >
+                    <p class="skillsTitleSecondPtag">
                         کارشناس شبکه های اجتماعی (جی اس ام)
                     </p>
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">
+                    <p class="skillsTitleSecondPtag">
                         مهندس سیستم در پروژه هواپیمای مسافربری ملی 150 نفره
                     </p>
                 </div>
@@ -426,26 +343,26 @@
             </div>
 
             <!--military status-->
-            <div style="margin-top: 20px;">
+            <div class="militaryStatus skillsTitle" style="margin-top: 20px;">
                 <!--language-->
-                <div class="col-lg-12" style="border: 1px solid transparent;height:40px;">
-                    <p style="direction: rtl; font-size: 17px;margin-top:4px;font-weight: bold">وضعیت خدمت سربازی</p>
+                <div class="col-lg-12 " >
+                    <p class="skillsTitleFirstPtag">وضعیت خدمت سربازی</p>
                 </div>
                 <div>
                     <div class="col-lg-1"></div>
-                    <hr class="col-lg-11" style="margin-top: 0px;margin-bottom: 5px" >
+                    <hr class="col-lg-11" >
                 </div>
 
                 <!--language description-->
                 <div class="col-lg-12" style="border: 1px solid transparent;">
-                    <p style="direction: rtl; font-size: 13px;margin-top:4px;text-align: justify">فراغت تحصیلی</p>
+                    <p class="skillsTitleSecondPtag">فراغت تحصیلی</p>
                 </div>
                 <div style="clear:both"></div>
             </div>
 
         </div>
         <!--symbol and line-->
-        <div class="col-lg-1 symbolline" >
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 symbolline" >
             <!--line-->
             <div id="line"
                  style="border: 1px solid transparent;padding: 0px 0px 0px ;text-align: center;height:700px;width:100%;position: relative;">
@@ -454,75 +371,111 @@
                 <!--line-->
                 <div class="line"></div>
                 <!--symbol-->
-                <img class="uscelImage" src="image/New%20folder%20(2)/user%20hexo.png" style="top: 25px">
-                <img class="uscelImage" src="image/New%20folder%20(2)/courses.png" style="top:125px"/>
-                <img class="uscelImage" src="image/New%20folder%20(2)/skills.png" style="top:225px;"/>
+                <img class="uscelImage" src="image/New%20folder%20(2)/user%20hexo.png" >
+                <img class="uscelImage" src="image/New%20folder%20(2)/courses.png" />
+                <img class="uscelImage" src="image/New%20folder%20(2)/skills.png" />
+                <img class="uscelImage" src="image/New%20folder%20(2)/education.png" />
+                <img class="uscelImage" src="image/New%20folder%20(2)/language.png" />
+                <img class="uscelImage" src="image/New%20folder%20(2)/previousJob.png" />
+                <img class="uscelImage" src="image/New%20folder%20(2)/soldier.png" />
 
-                <img class="uscelImage" src="image/New%20folder%20(2)/education.png" style="top:455px"/>
-                <img class="uscelImage" src="image/New%20folder%20(2)/language.png" style="top:630px"/>
 
             </div>
         </div>
         <!--photo & personal description-->
-        <div class=" col-lg-3 photoPersonalDescription" >
+        <div class=" col-lg-3 col-md-3 hidden-sm hidden-xs photoPersonalDescription" >
             <!--image div-->
             <div class="col-lg-12 col-md-12 col-sm-12 faceImgDiv" style="border: 1px solid transparent;">
                 <!--photo-->
                 <div class="faceImg" style=";height: 150px;width: 100%;margin-top: 15px;">
-
                     <img src="image/face/face.png"/>
                     <img src="image/face/face2.png"/>
-
-
+                    <img src="image/face/face3.png"/>
                 </div>
                 <!--name-->
                 <p class="name">
                     سهیل حسین</p>
                 <!--description-->
-                <p style="text-align: center;font-size: 13px;font-family: IRANSansWeb;color: #8F8B8F;">برنامه نویس سمت کاربر</p>
+                <p style="text-align: center;font-size: 13px;font-family: IRANSansWeb;color: #970009;">برنامه نویس سمت کاربر</p>
 
             </div>
             <!--personal description-->
             <div class="col-lg-12 col-md-12 col-sm-12 personalDescription" >
                 <!--birthday-->
-                <p >تاریخ تولد:</p>
-                <p>1368/3/30</p>
-                <br>
+                <div>
+                    <p >تاریخ تولد:</p>
+                    <p>1368/3/30</p>
+                </div>
+
                 <!--address-->
-                <p >محل سکونت:</p>
-                <p >تهران - پونک</p>
-                <br>
+                <div>
+                    <p >محل سکونت:</p>
+                    <p >تهران - پونک</p>
+                </div>
+
                 <!--phone number-->
-                <p>تلفن تماس:</p>
-                <p>09107891676</p>
-                <br>
+                <div>
+                    <p>تلفن تماس:</p>
+                    <p>09107891676</p>
+                </div>
+
                 <!--email-->
-                <p >ایمیل:</p>
-                <p class="emailLink">Hosseini.soheil@yahoo.com</p>
-                <br>
+                <div>
+                    <p >ایمیل:</p>
+                    <p class="emailLink">Hosseini.soheil@yahoo.com</p>
+                </div>
+
                 <!--website-->
-                <p >وبسایت:</p>
-                <p><a target="_blank" href="http://www.soheilhossein.ir">SoheilHossein.ir</a></p>
+                <div>
+                    <p >وبسایت:</p>
+                    <p><a target="_blank" href="http://www.soheilhossein.ir">SoheilHossein.ir</a></p>
+                </div>
+
+                <div>
+                    <p>گیت هاب:</p>
+                    <p ><a target="_blank" href="http://www.github.com/soheilhosseini">github.com/soheilhosseini</a></p>
+                    <div  style="clear: both;"></div>
+                </div>
+
+                <div >
+                    <p>تلگرام:</p>
+                    <p><a target="_blank" href="http://www.t.me/SoheilHossein">t.me/SoheilHossein</a></p>
+                    <div  style="clear: both;"></div>
+                </div>
+
+                <div >
+                    <p>استک اورفلو:</p>
+                    <p><a target="_blank" href="http://www.stackoverflow.com/users/8444527/soheil-hossein">stackoverflow.com/users/8444527/soheil-hossein</a></p>
+                    <div  style="clear: both;"></div>
+                </div>
+
+                <div >
+                    <p>لینکدین:</p>
+                    <p><a target="_blank" href="http://www.linkedin.com/in/soheil-hossein-796471156">linkedin.com/in/soheil-hossein-796471156</a></p>
+                    <div  style="clear: both;"></div>
+                </div>
+
+                <div >
+                    <p>کدپن:</p>
+                    <p><a target="_blank" href="https://codepen.io/soheilhossein/">codepen.io/soheilhossein</a></p>
+                    <div  style="clear: both;"></div>
+                </div>
             </div>
-            <!--git linkedin ... link-->
-            <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid transparent;height: 100px; border: 1px solid red;">
-                <i class="icon-github" style="font-size: 28px;"></i>
-                <i class="icon-google"></i>
-                <i class="icon-telegram"></i>
-                <i class="icon-stackoverflow"></i>
-                <i class="icon-phone"></i>
-                <i class="icon-linkedin"></i>
 
-
-
-
-            </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-1  edge"  style="height:1000px;padding: 20px;">
+    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs edge"  style="height:100vh;padding: 20px;">
     </div>
 </div>
 
 <script src="indexJs.js"></script>
+<script src="Scrollbar/jquery.mCustomScrollbar.js"></script>
+<!--<script>-->
+    <!--(function($){-->
+        <!--$(window).on("load",function(){-->
+            <!--$(".content").mCustomScrollbar();-->
+        <!--});-->
+    <!--})(jQuery);-->
+<!--</script>-->
 </body>
 </html>
