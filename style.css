@@ -282,33 +282,16 @@ body {
     float: left;
 }
 
+.faceImgDiv{
+    text-align: center;
+}
+
 .faceImgDiv img {
-    transition: 2s;
-    position: absolute;
+    position: relative;
     width: 140px;
     cursor: pointer;
 }
 
-.faceImgDiv img:nth-child(2), .faceImgDiv img:nth-child(3) {
-    opacity: 0;
-}
-
-.faceImgDiv img:nth-child(3) {
-    z-index: 20;
-}
-
-.faceImgDiv:hover img:first-child {
-    z-index: 1;
-}
-
-.faceImgDiv:hover img:nth-child(2) {
-    opacity: 1;
-    z-index: 10;
-}
-
-.faceImgDiv:hover .name {
-    color: #970009;
-}
 
 .name {
     text-align: center;
@@ -328,7 +311,8 @@ a {
 
 .personalDescription {
     direction: rtl;
-    padding: 20px 15%;
+    padding: 40px 18%;
+    text-align: center;
 }
 
 .personalDescription p {
@@ -344,11 +328,12 @@ a {
 }
 
 .personalDescription div {
-    margin-bottom: 27px;
+    margin-bottom: 40px;
 }
 
 .personalDescription div:last-child {
     margin-bottom: 0px;
+
 }
 
 .emailLink {
@@ -374,7 +359,7 @@ a {
 .skillsTitleSecondPtag {
     direction: rtl;
     font-size: 13px;
-    margin-top: 4px;
+    /*margin-top: 4px;*/
     text-align: justify
 }
 
@@ -407,32 +392,196 @@ a {
     margin-bottom: 5px;
 }
 
+.skillsRow{
+    margin: 5px 0px;
+}
 
-.uscelImage[src='image/New%20folder%20(2)/user%20hexo.png']{
-    top:25px;
+.footer{
+    text-align: center;
+    background-color: #2f2f2f;
+    padding:20px;
 }
-.uscelImage[src='image/New%20folder%20(2)/courses.png']{
-    top:120px;
+
+.footer i{
+    display: inline-block;
+    color: white;
+    padding:10px 30px;
+    font-size: 26px;
 }
-.uscelImage[src='image/New%20folder%20(2)/skills.png']{
-    top:220px;
+
+.smPersonalDescription{
+    width:100%;
+    padding:5px;
+    margin-top: 0px;
 }
-.uscelImage[src='image/New%20folder%20(2)/education.png']{
-    top:520px;
+
+.smPersonalDescription:last-child{
+    margin-bottom: 10px;
 }
-.uscelImage[src='image/New%20folder%20(2)/language.png']{
-    top:710px;
+
+.smPersonalDescription span:first-child{
+    float: right;
 }
-.uscelImage[src='image/New%20folder%20(2)/previousJob.png']{
-    top:805px;
+
+.smPersonalDescription span:nth-child(2){
+    float: left;
 }
-.uscelImage[src='image/New%20folder%20(2)/soldier.png']{
-    top:935px;
+
+.smPersonalDescription hr{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1920px) {
+    .uscelImage[src='image/New%20folder%20(2)/user%20hexo.png'] {
+        top: 25px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/courses.png'] {
+        top: 120px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/skills.png'] {
+        top: 210px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/education.png'] {
+        top: 510px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/language.png'] {
+        top: 695px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
+        top: 790px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
+        top: 915px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
+        display: none;
+    }
+    .firstDivPersonalDescription{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .uscelImage[src='image/New%20folder%20(2)/user%20hexo.png'] {
+        top: 25px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/courses.png'] {
+        top: 105px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/skills.png'] {
+        top: 185px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/education.png'] {
+        top: 470px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/language.png'] {
+        top: 650px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
+        top: 730px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
+        top: 835px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
+        display: none;
+    }
+    .firstDivPersonalDescription{
+        display: none;
+    }
+    .line{
+        height: 880px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .icons{
         font-size: 15px;
+    }
+
+    .uscelImage[src='image/New%20folder%20(2)/user%20hexo.png']{
+        top:25px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/courses.png']{
+        top:105px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/skills.png']{
+        top:185px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/education.png']{
+        top:470px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/language.png']{
+        top:650px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/previousJob.png']{
+        top:730px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/soldier.png']{
+        top:840px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/personalDescription.png']{
+        display: block;
+        top:930px;
+    }
+    .firstDivPersonalDescription{
+        display: block;
+    }
+    .line{
+        height: 1290px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .uscelImage[src='image/New%20folder%20(2)/user%20hexo.png']{
+        top:25px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/courses.png']{
+        top:105px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/skills.png']{
+        top:185px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/education.png']{
+        top:425px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/language.png']{
+        top:605px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/previousJob.png']{
+        top:680px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/soldier.png']{
+        top:795px;
+    }
+    .uscelImage[src='image/New%20folder%20(2)/personalDescription.png']{
+        display: block;
+        top:885px;
+    }
+
+    .line{
+        height: 1250px;
+    }
+    .firstDivPersonalDescription{
+        display: block;
+    }
+    .footer i {
+        font-size: 20px;
     }
 }
 
@@ -440,31 +589,19 @@ a {
     .skillsDiv {
         width:100%;
     }
-
-    .uscelImage[src='image/New%20folder%20(2)/user%20hexo.png']{
-        top:25px;
+    #line{
+        display: none;
     }
-    .uscelImage[src='image/New%20folder%20(2)/courses.png']{
-        top:120px;
+    .aboutMeEtc{
+        margin-top: 10px;
+        padding:0% 10%;
+        width:100%;
     }
-    .uscelImage[src='image/New%20folder%20(2)/skills.png']{
-        top:220px;
+    .footer i{
+        padding:10px 10px;
+        font-size: 20px;
     }
-    .uscelImage[src='image/New%20folder%20(2)/education.png']{
-        top:520px;
-    }
-    .uscelImage[src='image/New%20folder%20(2)/language.png']{
-        top:710px;
-    }
-    .uscelImage[src='image/New%20folder%20(2)/previousJob.png']{
-        top:805px;
-    }
-    .uscelImage[src='image/New%20folder%20(2)/soldier.png']{
-        top:935px;
-    }
-
 }
 
-.skillsRow{
-    margin: 5px 0px;
-}
+
+

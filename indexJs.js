@@ -102,3 +102,8 @@ function appear() {
         $('.edge i:eq(' + ran + ')').css('text-shadow', '5px 3px 15px black');
     }
 }
+
+// tooltip
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});

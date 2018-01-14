@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?u61pvo');
-  src:  url('fonts/icomoon.eot?u61pvo#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?u61pvo') format('truetype'),
-    url('fonts/icomoon.woff?u61pvo') format('woff'),
-    url('fonts/icomoon.svg?u61pvo#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jntxhm');
+  src:  url('fonts/icomoon.eot?jntxhm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jntxhm') format('truetype'),
+    url('fonts/icomoon.woff?jntxhm') format('woff'),
+    url('fonts/icomoon.svg?jntxhm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,63 +24,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-javascript:before {
+  content: "\e90b";
+}
 .icon-ANgualrJS:before {
   content: "\e900";
 }
 .icon-Boostrap:before {
   content: "\e901";
 }
-.icon-CSS3:before {
+.icon-codepen-logo:before {
   content: "\e902";
 }
-.icon-databaces:before {
+.icon-CSS3:before {
   content: "\e903";
 }
-.icon-empty-hexagon:before {
+.icon-databaces:before {
   content: "\e904";
 }
-.icon-fontawesome:before {
+.icon-empty-hexagon:before {
   content: "\e905";
 }
-.icon-github:before {
+.icon-fontawesome:before {
   content: "\e906";
 }
-.icon-google:before {
+.icon-github:before {
   content: "\e907";
 }
-.icon-hexagon:before {
+.icon-google:before {
   content: "\e908";
 }
-.icon-HTML5:before {
+.icon-hexagon:before {
   content: "\e909";
 }
-.icon-javascript:before {
+.icon-HTML5:before {
   content: "\e90a";
 }
 .icon-Jquery:before {
-  content: "\e90b";
-}
-.icon-linkedin:before {
   content: "\e90c";
 }
-.icon-materiaze:before {
+.icon-linkedin:before {
   content: "\e90d";
 }
-.icon-phone:before {
+.icon-materiaze:before {
   content: "\e90e";
 }
-.icon-photoshop:before {
+.icon-phone:before {
   content: "\e90f";
 }
-.icon-php:before {
+.icon-photoshop:before {
   content: "\e910";
 }
-.icon-sass-1:before {
+.icon-php:before {
   content: "\e911";
 }
-.icon-stackoverflow:before {
+.icon-sass-1:before {
   content: "\e912";
 }
-.icon-telegram:before {
+.icon-stackoverflow:before {
   content: "\e913";
+}
+.icon-telegram:before {
+  content: "\e914";
 }
