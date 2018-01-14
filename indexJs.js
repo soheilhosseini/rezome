@@ -36,8 +36,8 @@ $('#primitiveDiv img').click(function () {
         });
 
         // blink
-        // blink();
-        //     var inter=window.setInterval(blink, 10000);
+        blink();
+        var inter=window.setInterval(blink, 10000);
 
 
         //image clicking
