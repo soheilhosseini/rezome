@@ -99,7 +99,7 @@ body {
     user-select: none; /* Likely future */
     cursor: pointer;
     text-align: center;
-    height: 500px;
+    height: 220px;
 }
 
 #mainCenterDiv {
@@ -421,15 +421,15 @@ a {
     }
 
     .uscelImage[src='image/New%20folder%20(2)/language.png'] {
-        top: 695px;
+        top: 690px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
-        top: 790px;
+        top: 785px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
-        top: 915px;
+        top: 905px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
@@ -459,7 +459,7 @@ a {
     }
 
     .uscelImage[src='image/New%20folder%20(2)/language.png'] {
-        top: 715px;
+        top: 710px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
@@ -497,19 +497,19 @@ a {
     }
 
     .uscelImage[src='image/New%20folder%20(2)/education.png'] {
-        top: 470px;
+        top: 460px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/language.png'] {
-        top: 650px;
+        top: 635px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
-        top: 730px;
+        top: 720px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
-        top: 835px;
+        top: 820px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
@@ -539,19 +539,19 @@ a {
     }
 
     .uscelImage[src='image/New%20folder%20(2)/education.png'] {
-        top: 485px;
+        top: 475px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/language.png'] {
-        top: 665px;
+        top: 655px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
-        top: 745px;
+        top: 735px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
-        top: 855px;
+        top: 845px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
@@ -585,24 +585,24 @@ a {
     }
 
     .uscelImage[src='image/New%20folder%20(2)/education.png'] {
-        top: 470px;
+        top: 460px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/language.png'] {
-        top: 650px;
+        top: 640px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
-        top: 730px;
+        top: 720px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
-        top: 840px;
+        top: 830px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
         display: block;
-        top: 930px;
+        top: 920px;
     }
 
     .firstDivPersonalDescription {
@@ -617,10 +617,6 @@ a {
 
 @media only screen and (max-width: 768px) {
 
-    .footer{
-        background-color: red;
-    }
-
     .uscelImage[src='image/New%20folder%20(2)/user%20hexo.png'] {
         top: 25px;
     }
@@ -634,24 +630,24 @@ a {
     }
 
     .uscelImage[src='image/New%20folder%20(2)/education.png'] {
-        top: 425px;
+        top: 415px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/language.png'] {
-        top: 605px;
+        top: 595px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
-        top: 680px;
+        top: 670px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
-        top: 795px;
+        top: 785px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
         display: block;
-        top: 885px;
+        top: 875px;
     }
 
     .line {
@@ -683,24 +679,24 @@ a {
     }
 
     .uscelImage[src='image/New%20folder%20(2)/education.png'] {
-        top: 440px;
+        top: 430px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/language.png'] {
-        top: 620px;
+        top: 610px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/previousJob.png'] {
-        top: 700px;
+        top: 690px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/soldier.png'] {
-        top: 810px;
+        top: 800px;
     }
 
     .uscelImage[src='image/New%20folder%20(2)/personalDescription.png'] {
         display: block;
-        top: 900px;
+        top: 890px;
     }
 }
 
